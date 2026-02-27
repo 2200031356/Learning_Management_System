@@ -1,0 +1,267 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #f5f7ff, #eef2ff);
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.navbar {
+  background: white;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+  width: 92%;
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-links a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6366f1;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+.btn-primary {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===============================
+   AUTH PAGES (LOGIN / REGISTER)
+================================= */
+
+.auth-wrapper {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: white;
+  width: 420px;
+  padding: 45px 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.15);
+  text-align: center;
+}
+
+.auth-icon {
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+.auth-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* ===============================
+   FORM
+================================= */
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-form input,
+.auth-form select,
+.auth-form textarea {
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.auth-form input:focus,
+.auth-form select:focus,
+.auth-form textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Gradient Button */
+
+.auth-button {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  padding: 13px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+/* ===============================
+   LINKS
+================================= */
+
+.link-text {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+.link-text a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   DASHBOARD
+================================= */
+
+.page-container {
+  width: 92%;
+  max-width: 1250px;
+  margin: 60px auto;
+}
+
+.page-container h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Cards */
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #1e293b;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #64748b;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.15);
+}
+
+/* ===============================
+   LIST CARDS
+================================= */
+
+.list-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
